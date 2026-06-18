@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=64", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "netsekhmet-xiv"
+version = "14.0.0"
+description = "Full Combat Edition – Hardened with pinned keys and 30+ real exploits"
+requires-python = ">=3.9"
+dependencies = [
+    "httpx", "beautifulsoup4", "paramiko", "python-nmap", "fpdf2", "colorama",
+    "tqdm", "scapy", "cryptography", "pyyaml", "impacket", "flask", "sqlalchemy",
+    "aiohttp", "rich", "requests", "pysmb", "ldap3", "python-socks", "PySocks",
+    "dnspython", "pyOpenSSL", "websockets", "psutil", "pycryptodome", "python-dotenv",
+    "pynput", "pypsrp", "pyscreenshot", "pyfiglet", "flask-socketio", "eventlet",
+    "netifaces", "typer", "pyreadline3"
+]
+[project.scripts]
+netsekhmet = "netsekhmet.cli:main"
